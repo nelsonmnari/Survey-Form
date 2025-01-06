@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<htmml len="en">
+<head>
+  <title>Kenya Commercial Bank Accoount Survey Form.</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="surveyForm.css">
+</head>
+<body>
+  <h1 id="title">Kenya Commercial Bank Account Survey Form.</h1>
+  <p id="description">Thank you for dedicating your time to help us make this platform better.</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+      <label id="email-label">Email<input id="email" placeholder="Enter your email" type="email" required></label>
+      <label id="number-label">Age (optional)<input id="number" min="18" max="120" placeholder="Enter your age" type="number"></label>
+    </fieldset>
+
+    <fieldset>
+      <p>Which options most accurately represent your role?</p>
+      <select id="dropdown">
+ <option value="">Select current role</option>       <option>attache</option>
+        <option>intern</option>
+        <option>customer</option>
+        <option>employed</option>
+      </select>
+    </fieldset>
+    
+    <fieldset>
+      <p>How likey are you to recommend KCB app to another person?</p>
+      <label><input name="recommend" type="radio" value="likely">  Likely</label>
+      <label><input name="recommend" type="radio" value="most-likely">  Most likely</label>
+      <label><input name="recommend" type="radio" value="never">  Never</label>
+      <label><input name="recommend" type="radio" value="not-sure">  Not sure</label>
+    </fieldset>
+    <fieldset>
+      <select>
+        <option value="">Select option</option>
+        <option>Easy way to access your account</option>
+        <option>Quick money transfer</option>
+        <option>Being able to access your account anytime anywhere </option>
+        <option>Being able to transact and deposit</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <p>What do you like most about the KCB app</p>
+      <label><input type="checkbox" value="management"> Account management</label>
+      <label><input type="checkbox" value="security"> Security</label>
+      <label><input type="checkbox" value="ease"> Ease of use</label>
+      <label><input type="checkbox" value="speed">Speed and performance</label>
+      <label><input type="checkbox" value="transfers">Payment and transfers</label>
+      <label><input type="checkbox" value="support">Customer support</label>
+      <label><input type="checkbox" value="personalization">Personalization</label>
+      <label><input type="checkbox" value="intergration">Intergration</label>
+    </fieldset>
+    <fieldset>
+    <textarea placeholder="Enter your comments here"></textarea>
+    </fieldset>
+    <fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </fieldset>
+  </form>
+</body>
+</html>
